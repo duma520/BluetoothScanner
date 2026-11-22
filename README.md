@@ -1,4 +1,4 @@
-# BluetoothScanner （见源码内 VERSION 常量）
+# BluetoothScanner v2.0.0
 
 > **一句话**：BluetoothScanner —— 一个用 Python 写的 Windows 桌面程序，
 > 主程序为 `BluetoothScanner.py`，界面技术栈 tkinter（Python 自带 GUI，无需额外安装）。
@@ -29,7 +29,7 @@
 | 项目 | 说明 |
 | --- | --- |
 | 程序名 | `BluetoothScanner` |
-| 当前版本 | （见源码内 VERSION 常量） |
+| 当前版本 | v2.0.0 |
 | 主程序 | `BluetoothScanner.py` |
 | 界面技术 | tkinter（Python 自带 GUI，无需额外安装） |
 | 语言 / 运行平台 | Python 3.10 / Windows |
@@ -54,7 +54,7 @@
 在源码目录打开命令行，执行：
 
 ```
-pip install Pillow PyBluez bleak dataclasses
+pip install Pillow PyBluez bleak
 ```
 
 > 清单是从源码的实际 import 汇总出来的；若某个包名不准确，以 pip 报错提示的正确包名为准。
@@ -75,7 +75,13 @@ python BluetoothScanner.py
 | --- | --- |
 | 界面框架 | tkinter（Python 自带 GUI，无需额外安装） |
 | 是否有 main 入口 | 是，可直接 python 主程序.py 运行 |
-| 第三方依赖数 | 4 个 |
+| 第三方依赖数 | 3 个 |
+
+### 版本变更（来自项目自带迭代记录）
+
+| 版本 | 说明 |
+| --- | --- |
+| 2.0.0 | 首次开源归档：源码与文档同步到 GitHub，版本号取自源码内版本常量 |
 
 ## 4. 命令行参数
 
@@ -92,7 +98,7 @@ python BluetoothScanner.py
 ```
 
 - 入口文件 `BluetoothScanner.py`，带 if __name__ == '__main__' 保护。
-- 依赖的第三方库：`Pillow`、`PyBluez`、`bleak`、`dataclasses`。
+- 依赖的第三方库：`Pillow`、`PyBluez`、`bleak`。
 - 全部业务逻辑在仓库内可见，没有编译产物、没有联网下发代码。
 
 ## 7. 排错手册
@@ -136,6 +142,7 @@ BluetoothScanner.py
 README.md
 bluetooth_scanner.log
 icon.ico
+软件升级迭代记录.md
 ```
 
 ## 10. 开发与构建
