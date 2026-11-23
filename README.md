@@ -1,11 +1,8 @@
 # BluetoothScanner v2.0.0
 
-> **一句话**：BluetoothScanner —— 一个用 Python 写的 Windows 桌面程序，
+> **一句话**：蓝牙设备扫描器：用 bleak 扫描周边 BLE 设备，列出名称、MAC、信号强度 RSSI 与服务 UUID，结果可导出 CSV、支持事件回调与多平台运行。找丢在角落的手环耳机、排查蓝牙设备连不上时用。
+>
 > 主程序为 `BluetoothScanner.py`，界面技术栈 tkinter（Python 自带 GUI，无需额外安装）。
->
-> **适合谁**：想直接用现成工具、不想自己写代码的 Windows 用户。
->
-> **解决什么问题**：把这件事做成开箱即用的程序 —— 下载解压、装上依赖、双击就能跑。
 
 ---
 
